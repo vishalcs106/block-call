@@ -96,8 +96,7 @@ public class CallReceiver extends BroadcastReceiver {
         SharedPreferences.Editor editor = sharedpreferences.edit();
             editor.putBoolean("requested", requested);
             editor.commit();
-            String URL = "https://doctorscircle.in/utility/send_download_app_sms";
-            String url = URL + "?device_id=" + getUDID(mContext) + "&user_id=0&ph_num=" + phNum.substring(3);
+            String url = "your_url_here";
             JsonObjectRequest videosRequest = new JsonObjectRequest(Request.Method.GET, url, (String) null,
                     new com.android.volley.Response.Listener<JSONObject>() {
                         @Override
